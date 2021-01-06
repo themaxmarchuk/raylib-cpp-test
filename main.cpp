@@ -58,10 +58,10 @@ public:
             Move(-1, delta);
         }
         if (IsKeyDown(KEY_D)) {
-            rotation += 5;
+            rotation += 300 * delta;
         }
         if (IsKeyDown(KEY_A)) {
-            rotation -= 5;
+            rotation -= 300 * delta;
         }
     }
 
@@ -76,7 +76,7 @@ int main()
     SetConfigFlags(FLAG_VSYNC_HINT);
     InitWindow(1280, 720, "raylib-cpp");
     Texture2D shipTexture = LoadTexture("ship.png");
-    SetTargetFPS(60);
+    SetTargetFPS(144);
     Player player(200.0f, 200.0f, 500.0f, 0.0f, 3, shipTexture);
     while (!WindowShouldClose())
     {
