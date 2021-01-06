@@ -1,6 +1,9 @@
 # Build directories
 build
 
+# Language server cache
+.ccls-cache
+
 # Compile commands
 compile_commands.json
 
