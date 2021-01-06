@@ -3,7 +3,6 @@ project(raylib-cpp-test)
 
 # Configure raylib
 set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
-set(BUILD_GAMES    OFF CACHE BOOL "" FORCE)
 
 # Build raylib
 add_subdirectory(vendor/raylib)
